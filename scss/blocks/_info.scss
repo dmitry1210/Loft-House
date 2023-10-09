@@ -1,0 +1,25 @@
+.info {
+  position: relative;
+  font-size: 18px;
+  padding-left: 35px;
+
+  &--map::before,
+  &--tel::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 21px;
+    height: 21px;
+    background-repeat: no-repeat;
+  }
+
+  &--map::before {
+    background-image: url("./../../img/info/map.svg");
+  }
+
+  &--tel::before {
+    background-image: url("./../../img/info/phone.svg");
+    background-repeat: no-repeat;
+  }
+}
