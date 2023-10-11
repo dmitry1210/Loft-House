@@ -3,16 +3,9 @@
 
   &::before {
     content: "III";
-
-    position: absolute;
-    top: 0;
     right: calc(50% + 555px);
     transform: translate(50%, 0%);
-    line-height: 1.15;
-    
-    opacity: 0.02;
-    font-size: 400px;
-    font-family: $font-accent;
+    @include decorNumber;
   }
 }
 
