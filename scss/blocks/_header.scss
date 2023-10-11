@@ -12,13 +12,26 @@
       rgba(45, 52, 60, 0.38) 51.04%,
       #242b33 92.19%
     ),
-    url('./../img/header/header-bg.jpg');
+    url("./../img/header/header-bg.jpg");
+}
+
+.header__nav {
+  @include mediaTablet {
+    display: none;
+  }
+
 }
 
 .header__top-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header__nav-btn {
+  @include mediaTablet {
+    display: block;
+  }
 }
 
 .header__title {
@@ -29,20 +42,17 @@
   font-family: $font-accent;
   color: $accent;
   font-weight: 700;
-
 }
 
 .header__title-icon {
-position: absolute;
-bottom: 0;
-left: 50%;
-transform: translate(-50%, 0%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }
 
 .header__footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  
 }
-
