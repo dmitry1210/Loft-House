@@ -2,6 +2,10 @@
   padding: 180px 0;
   position: relative;
 
+  @include mediaTablet {
+    padding: 90px 0;
+  }
+
   &::before {
     content: "V";
     right: calc(50% + 555px);
@@ -15,6 +19,11 @@
 
 .section-map__title {
   margin-bottom: 88px;
+
+  @include mediaTablet {
+    margin-bottom: 44px;
+
+  }
 }
 
 .map {
