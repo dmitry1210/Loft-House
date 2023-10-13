@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loft-House</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css" />
   </head>
   <body>
-    <header class="header none">
+    <header class="header">
       <div class="header__top">
         <div class="container">
           <div class="header__top-row">
@@ -57,7 +58,7 @@
     </header>
 
     <main>
-      <section class="benefits none">
+      <section class="benefits">
         <h2 class="visually-hidden">Преимущества ЖК</h2>
         <div class="container container--sm">
           <div class="benefits__row">
@@ -101,7 +102,7 @@
           </div>
         </div>
       </section>
-      <section class="apartments none">
+      <section class="apartments">
         <div class="container">
           <div class="apartments__title">
             <h2 class="title-2">Наши квартиры</h2>
@@ -142,7 +143,7 @@
           </div>
         </div>
       </section>
-      <section class="cta none">
+      <section class="cta">
         <div class="container">
           <div class="cta__title">
             <h2 class="title-2">Хотите посмотреть?</h2>
@@ -159,6 +160,7 @@
             <form class="cta__form form">
               <input type="text" class="form__input" placeholder="Ваше имя" />
               <input
+                data-tel-input
                 type="text"
                 class="form__input"
                 placeholder="Ваш телефон"
@@ -172,16 +174,20 @@
           </div>
         </div>
       </section>
-      <section class="video none">
+      <section class="video">
         <h2 class="visually-hidden">Видео про ЖК Loft House</h2>
         <div class="container">
-          <a href="#1" class="video__link">
+          <a
+            href="https://www.youtube.com/watch?v=bhJNL9JUsnY"
+            data-youtubeLightbox
+            class="video__link"
+          >
             <img src="./img/video/play-button.svg" alt="" class="video__icon" />
             <img src="./img/video/video-img.jpg" alt="" class="video__img" />
           </a>
         </div>
       </section>
-      <section class="section-map none">
+      <section class="section-map">
         <div class="container">
           <div class="section-map__title">
             <h2 class="title-2">Район на карте</h2>
@@ -191,7 +197,7 @@
           </div>
         </div>
       </section>
-      <section class="feedback none">
+      <section class="feedback">
         <div class="container">
           <div class="feedback__title">
             <h2 class="title-2">Есть вопросы?</h2>
@@ -202,7 +208,12 @@
               в базу.
             </p>
             <input type="text" class="form__input" placeholder="Ваше имя" />
-            <input type="text" class="form__input" placeholder="Ваш телефон" />
+            <input
+              data-tel-input
+              type="text"
+              class="form__input"
+              placeholder="Ваш телефон"
+            />
             <button type="submit" class="form__btn">Посмотреть район</button>
           </form>
         </div>
@@ -276,6 +287,19 @@
       </div>
     </footer>
 
+    <!-- YouTube LightBox -->
+    <div id="youtubelightbox" class="youtubelightbox">
+      <div class="youtubelightbox__centeredchild">
+          <div class="youtubelightbox__videowrapper">
+              <div id="youtubelightboxPlayer"></div>
+          </div>
+      </div>
+  </div>
+
+    <script src="./libs/phoneMask/mask.js"></script>
+    <script src="./libs/phoneMask/mask_list.js"></script>
+
+    <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
