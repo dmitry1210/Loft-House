@@ -1,6 +1,7 @@
 # Loft-House
 
-Landing page of an apartment complex (HTML, SCSS, JS, Yandex map API).
+Landing page of an apartment complex.
+Stack: HTML, SCSS, JS, Yandex map API.
 
 Webpage preview:
 
