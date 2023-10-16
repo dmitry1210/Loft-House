@@ -2,7 +2,7 @@
 
 Landing page of an apartment complex.
 
-Stack: HTML, SCSS, JS, Yandex map API.
+Stack: HTML, SCSS, JavaScript, Yandex map API.
 
 Webpage preview:
 
