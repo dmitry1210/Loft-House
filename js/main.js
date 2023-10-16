@@ -2,12 +2,35 @@
 const navBtn = document.querySelector(".nav-icon-btn");
 const navIcon = document.querySelector(".nav-icon");
 const nav = document.querySelector(".header__top-row");
+const navMobile = document.querySelector(".nav__list");
 
-navBtn.onclick = function () {
+navBtn.addEventListener("click", function () {
   navIcon.classList.toggle("nav-icon--active");
   nav.classList.toggle("header__top-row--mobile");
   document.body.classList.toggle("no-scroll");
-};
+});
+
+navMobile.addEventListener("click", function (e) {
+  if (e.target.matches("a")) {
+    navIcon.classList.remove("nav-icon--active");
+    nav.classList.remove("header__top-row--mobile");
+    document.body.classList.remove("no-scroll");
+  }
+});
+
+// navItems.addEventListener("click", function () {
+//   navItems.forEach(function (item) {
+//     navIcon.classList.toggle("nav-icon--active");
+//     nav.classList.toggle("header__top-row--mobile");
+//     document.body.classList.toggle("no-scroll");
+//   });
+// });
+
+//   navIcon.classList.toggle("nav-icon--active");
+//   nav.classList.toggle("header__top-row--mobile");
+//   document.body.classList.toggle("no-scroll");
+// });
+
 
 // Phone mask
 mask("[data-tel-input]");
